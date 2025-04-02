@@ -6,10 +6,13 @@ pipeline {
         bat '"C:\\Windows\\System32\\cmd.exe" /c python --version'
       }
     }
-    stage('Param') {
+    stage('param') {
       steps {
-        bat '"C:\\Windows\\System32\\cmd.exe" /c Python test1.py %X_VALUE %Y_VALUE%'
+        bat '"C:\\Windows\\System32\\cmd.exe" /c python test1.py %X_VALUE% %Y_VALUE%'
       }
     }
   }
 }
+
+
+
